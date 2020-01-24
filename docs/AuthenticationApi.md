@@ -7,8 +7,9 @@ Method | HTTP request | Description
 [**authentication_login**](AuthenticationApi.md#authentication_login) | **POST** /auth/login | User login to get AccessToken to query API data.
 [**authentication_refresh**](AuthenticationApi.md#authentication_refresh) | **POST** /auth/refresh | Refresh AccessToken, i.e. get a new AccessToken without loging in.
 
+
 # **authentication_login**
-> AuthenticationModel authentication_login(body)
+> AuthenticationModel authentication_login(model)
 
 User login to get AccessToken to query API data.
 
@@ -22,11 +23,11 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = swagger_client.AuthenticationApi()
-body = swagger_client.LoginModel() # LoginModel | Login data (username, password, etc.).
+model = swagger_client.LoginModel() # LoginModel | Login data (username, password, etc.).
 
 try:
     # User login to get AccessToken to query API data.
-    api_response = api_instance.authentication_login(body)
+    api_response = api_instance.authentication_login(model)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling AuthenticationApi->authentication_login: %s\n" % e)
@@ -36,7 +37,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**LoginModel**](LoginModel.md)| Login data (username, password, etc.). | 
+ **model** | [**LoginModel**](LoginModel.md)| Login data (username, password, etc.). | 
 
 ### Return type
 
@@ -54,7 +55,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **authentication_refresh**
-> AuthenticationModel authentication_refresh(body)
+> AuthenticationModel authentication_refresh(model)
 
 Refresh AccessToken, i.e. get a new AccessToken without loging in.
 
@@ -68,11 +69,11 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = swagger_client.AuthenticationApi()
-body = swagger_client.RefreshModel() # RefreshModel | Refresh data (current AccessToken, RefreshToken, etc.).
+model = swagger_client.RefreshModel() # RefreshModel | Refresh data (current AccessToken, RefreshToken, etc.).
 
 try:
     # Refresh AccessToken, i.e. get a new AccessToken without loging in.
-    api_response = api_instance.authentication_refresh(body)
+    api_response = api_instance.authentication_refresh(model)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling AuthenticationApi->authentication_refresh: %s\n" % e)
@@ -82,7 +83,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**RefreshModel**](RefreshModel.md)| Refresh data (current AccessToken, RefreshToken, etc.). | 
+ **model** | [**RefreshModel**](RefreshModel.md)| Refresh data (current AccessToken, RefreshToken, etc.). | 
 
 ### Return type
 

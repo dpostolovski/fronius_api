@@ -6,6 +6,7 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**realtime_get**](RealtimeApi.md#realtime_get) | **GET** /realtime/{pvSystemId} | Gets realtime values for given pv system for user.
 
+
 # **realtime_get**
 > RealtimeInverterExpertModel realtime_get(pv_system_id, access_token)
 
@@ -21,7 +22,7 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = swagger_client.RealtimeApi()
-pv_system_id = '38400000-8cf0-11bd-b23e-10b96e4ef00d' # str | PV system Id as Guid.
+pv_system_id = 'pv_system_id_example' # str | PV system Id as Guid.
 access_token = 'access_token_example' # str | access token obtained from the service method /auth/login
 
 try:

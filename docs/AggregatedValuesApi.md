@@ -8,6 +8,7 @@ Method | HTTP request | Description
 [**aggregated_values_get_total_values**](AggregatedValuesApi.md#aggregated_values_get_total_values) | **GET** /aggvalues/total | Gets yearly aggregated values for given pv system (only available with expert package).
 [**aggregated_values_get_year_values**](AggregatedValuesApi.md#aggregated_values_get_year_values) | **GET** /aggvalues/year | Gets monthly aggregated values for given pv system and year  (only available with expert package).
 
+
 # **aggregated_values_get_month_values**
 > AggValuesModel aggregated_values_get_month_values(pv_system_id, year, month, access_token)
 
@@ -23,7 +24,7 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = swagger_client.AggregatedValuesApi()
-pv_system_id = '38400000-8cf0-11bd-b23e-10b96e4ef00d' # str | PV system ID as Guid.
+pv_system_id = 'pv_system_id_example' # str | PV system ID as Guid.
 year = 56 # int | The year to get aggregated days for.
 month = 56 # int | The month to get aggregated days for.
 access_token = 'access_token_example' # str | access token obtained from the service method /auth/login
@@ -75,7 +76,7 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = swagger_client.AggregatedValuesApi()
-pv_system_id = '38400000-8cf0-11bd-b23e-10b96e4ef00d' # str | PV system ID as Guid.
+pv_system_id = 'pv_system_id_example' # str | PV system ID as Guid.
 access_token = 'access_token_example' # str | access token obtained from the service method /auth/login
 
 try:
@@ -123,7 +124,7 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = swagger_client.AggregatedValuesApi()
-pv_system_id = '38400000-8cf0-11bd-b23e-10b96e4ef00d' # str | PV system ID as Guid.
+pv_system_id = 'pv_system_id_example' # str | PV system ID as Guid.
 year = 56 # int | The year to get aggregated months for.
 access_token = 'access_token_example' # str | access token obtained from the service method /auth/login
 
