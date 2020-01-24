@@ -9,8 +9,7 @@ Name | Type | Description | Notes
 **node_type** | **int** | Node type of device. | [optional] 
 **device_type** | **int** | Device type of device. | [optional] 
 **log_date_time** | **datetime** | Log time of value. | [optional] 
-**value** | [**ValueUnit**](ValueUnit.md) | Value with unit. | [optional] 
+**value** | [**ValueUnit**](ValueUnit.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
 

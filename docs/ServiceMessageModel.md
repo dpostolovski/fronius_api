@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **pv_system_id** | **str** | PV system ID as Guid. | [optional] 
-**type** | **str** | Service message type, i.e. &#39;Error&#39; or &#39;Event&#39;. | [optional] 
+**type** | **str** | Service message type, i.e. &#x27;Error&#x27; or &#x27;Event&#x27;. | [optional] 
 **dalo_id** | **str** | Dalo of service message. | [optional] 
 **device_id** | **str** | Device ID of service message. | [optional] 
 **error_code** | **int** | Error code. | [optional] 
@@ -14,5 +14,4 @@ Name | Type | Description | Notes
 **text** | **str** | Service message text. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
 

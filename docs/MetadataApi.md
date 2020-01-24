@@ -7,7 +7,6 @@ Method | HTTP request | Description
 [**metadata_get**](MetadataApi.md#metadata_get) | **GET** /metadata | Gets metadata of all PV systems for the user, identified by the access token.
 [**metadata_get_0**](MetadataApi.md#metadata_get_0) | **GET** /metadata/{pvSystemId} | Gets metadata of the PV systems with the given ID.
 
-
 # **metadata_get**
 > list[PvSystemMetadataExpertModel] metadata_get(access_token)
 
@@ -69,7 +68,7 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = swagger_client.MetadataApi()
-pv_system_id = 'pv_system_id_example' # str | PV system ID as Guid.
+pv_system_id = '38400000-8cf0-11bd-b23e-10b96e4ef00d' # str | PV system ID as Guid.
 access_token = 'access_token_example' # str | access token obtained from the service method /auth/login
 
 try:
